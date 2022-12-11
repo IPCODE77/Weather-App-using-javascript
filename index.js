@@ -9,7 +9,7 @@ function changeimg(){
     
 }
 
-window.onload = function(){
+window.onload = async function(){
     setInterval(() => {
         brand_img.classList.add('hide')
         brand_img.classList.remove('active')
@@ -21,6 +21,7 @@ window.onload = function(){
         }, 500);
 
     }, 3000);
+    await checkweather('delhi')
 }
 
     // let d = new Date()
@@ -55,9 +56,9 @@ setInterval(() => {
     
 }, 100);
 
-window.onload = async function(){
-    await checkweather('delhi')
-}
+// window.onload = async function(){
+//     await checkweather('delhi')
+// }
 
 
 searchbtn.addEventListener('click',()=>{
