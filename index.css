@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+/* for brand */
+
+nav{
+  background: #C33764;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+body,nav{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+.brand {
+  color: white;
+  font-family: "Lora", serif;
+  text-decoration: none;
+  font-size: 25px;
+}
+#brand_img {
+  height: 50px;
+  width: 50px;
+  transition: all 0.4s ease-in-out;
+}
+
+.first_box {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.info,
+.animate {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  /* justify-self: unset; */
+  justify-content: center;
+}
+.animate {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  /* display: none; */
+  transition: all 0.3s ease-in-out;
+}
+.welcome_msg,
+.welcome_para {
+  font-family: "Noto Serif NP Hmong", serif;
+  text-transform: capitalize;
+  color: white;
+}
+
+.search_box {
+  position: relative;
+}
+#search {
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 18rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+#search_icon {
+  position: absolute;
+  font-size: 26px;
+  right: 5px;
+  top: 4px;
+  color: #005bc5;
+  cursor: pointer;
+}
+
+.animate {
+  position: relative;
+}
+.we_icon {
+  height: 9rem;
+  width: 9rem;
+}
+@keyframes moveimg {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0.876rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.we_pic {
+  height: 250px;
+  width: 250px;
+  animation: moveimg 2s ease-in-out infinite;
+  transition: all 0.5s ease;
+}
+
+#demo_weather {
+  font-family: "Lobster", cursive;
+  color: white;
+  font-size: 40px;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.active {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+.wether {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.city_name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  margin: 0px 20px;
+  font-family: 'Oranienbaum', serif;
+}
+#temp {
+  font-size: 50px;
+  font-weight: 600;
+}
+#city_name,
+#feel ,#feels{
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: -3px;
+}
+@media (max-width: 630px) {
+  
+  .wether {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  .city_name {
+    display: flex;
+    align-items: center;
+  }
+  .info_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 630px) {
+  .info {
+    padding-right: 8rem;
+  }
+  .info_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    margin: 10px;
+  }
+  footer p{
+    margin: 1rem 12rem 0rem 6rem;
+    transition: margin 0.4s ease-in-out;
+  }
+}
+
+.info_box{
+  font-family: 'Poppins', sans-serif;
+}
+.navbar-toggler{
+  opacity: 0;
+}
+footer{
+  position: relative;
+  bottom: 0;
+  color: white;
+}
+footer p{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: 'Nosifer', cursive;
+  padding: 0px 10px;
+  transition: all 0.3s ease-in-out;
+}
+.typed-cursor{
+  display: none;
+}
+#spinner{
+  margin-top: 2.5rem;
+}
+
+.mute{
+  display: none;
+}
+/* .unmute{
+  display: flex;
+} */
